@@ -2,8 +2,9 @@
 
 import VerticalInvitation from "@/components/VerticalInvitation";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function Home() {
+function PageContent() {
   const searchParams = useSearchParams();
 
   const name = searchParams.get("name") || "";
@@ -15,6 +16,32 @@ export default function Home() {
     </main>
   );
 }
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div>Түр хүлээнэ үү...</div>}>
+      <PageContent />
+    </Suspense>
+  );
+}
+
+// "use client";
+
+// import VerticalInvitation from "@/components/VerticalInvitation";
+// import { useSearchParams } from "next/navigation";
+
+// export default function Home() {
+//   const searchParams = useSearchParams();
+
+//   const name = searchParams.get("name") || "";
+//   const time = searchParams.get("time") || "";
+
+//   return (
+//     <main className="min-h-screen">
+//       <VerticalInvitation name={name} time={time} />
+//     </main>
+//   );
+// }
 
 // import VerticalInvitation from "@/components/VerticalInvitation";
 
