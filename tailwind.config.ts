@@ -49,11 +49,11 @@ const config: Config = {
         // => @media (min-width: 1280px) { ... }
       },
 
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
       colors: {
         primary: "#2B7F75",
         primary100: "#D7F8E8",
@@ -180,72 +180,72 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    function ({ addComponents }: any) {
-      addComponents({
-        ".container": {
-          maxWidth: "100%",
-          "@screen sm": {
-            maxWidth: "576px",
-          },
-          "@screen md": {
-            maxWidth: "768px",
-          },
-          "@screen lg": {
-            maxWidth: "992px",
-          },
-          "@screen xl": {
-            maxWidth: "1200px",
-          },
-        },
-        ".table-container": {
-          maxWidth: "100%",
-          "@screen sm": {
-            maxWidth: "576px",
-          },
-          "@screen md": {
-            maxWidth: "768px",
-          },
-          "@screen lg": {
-            maxWidth: "992px",
-          },
-          "@screen xl": {
-            maxWidth: "1200px",
-          },
-          "@screen 2xl": {
-            maxWidth: "2400px",
-          },
-        },
-      });
-    },
+  // plugins: [
+  //   function ({ addComponents }: any) {
+  //     addComponents({
+  //       ".container": {
+  //         maxWidth: "100%",
+  //         "@screen sm": {
+  //           maxWidth: "576px",
+  //         },
+  //         "@screen md": {
+  //           maxWidth: "768px",
+  //         },
+  //         "@screen lg": {
+  //           maxWidth: "992px",
+  //         },
+  //         "@screen xl": {
+  //           maxWidth: "1200px",
+  //         },
+  //       },
+  //       ".table-container": {
+  //         maxWidth: "100%",
+  //         "@screen sm": {
+  //           maxWidth: "576px",
+  //         },
+  //         "@screen md": {
+  //           maxWidth: "768px",
+  //         },
+  //         "@screen lg": {
+  //           maxWidth: "992px",
+  //         },
+  //         "@screen xl": {
+  //           maxWidth: "1200px",
+  //         },
+  //         "@screen 2xl": {
+  //           maxWidth: "2400px",
+  //         },
+  //       },
+  //     });
+  //   },
 
-    function ({ addUtilities }: any) {
-      addUtilities({
-        ".text-indent-50": {
-          textIndent: "50px",
-        },
-      });
-    },
+  //   function ({ addUtilities }: any) {
+  //     addUtilities({
+  //       ".text-indent-50": {
+  //         textIndent: "50px",
+  //       },
+  //     });
+  //   },
 
-    function ({ addComponents }: any) {
-      addComponents({
-        ".halfContainer": {
-          maxWidth: "100%",
-          "@screen sm": {
-            maxWidth: "288px",
-          },
-          "@screen md": {
-            maxWidth: "384px",
-          },
-          "@screen lg": {
-            maxWidth: "496px",
-          },
-          "@screen xl": {
-            maxWidth: "600px",
-          },
-        },
-      });
-    },
-  ],
+  //   function ({ addComponents }: any) {
+  //     addComponents({
+  //       ".halfContainer": {
+  //         maxWidth: "100%",
+  //         "@screen sm": {
+  //           maxWidth: "288px",
+  //         },
+  //         "@screen md": {
+  //           maxWidth: "384px",
+  //         },
+  //         "@screen lg": {
+  //           maxWidth: "496px",
+  //         },
+  //         "@screen xl": {
+  //           maxWidth: "600px",
+  //         },
+  //       },
+  //     });
+  //   },
+  // ],
 };
 export default config;
