@@ -1,15 +1,13 @@
+"use client";
+
 import VerticalInvitation from "@/components/VerticalInvitation";
+import { useSearchParams } from "next/navigation";
 
-// Runtime-г dynamic гэж зааж өгнө
-export const dynamic = "force-dynamic";
+export default function Home() {
+  const searchParams = useSearchParams();
 
-export default function Home({
-  searchParams,
-}: {
-  searchParams?: { [key: string]: string | undefined };
-}) {
-  const name = searchParams?.name;
-  const time = searchParams?.time;
+  const name = searchParams.get("name") || "";
+  const time = searchParams.get("time") || "";
 
   return (
     <main className="min-h-screen">

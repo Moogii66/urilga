@@ -6,8 +6,8 @@ export default function VerticalInvitation({
   name,
   time,
 }: {
-  name?: string;
-  time?: string;
+  name: string;
+  time: string;
 }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -60,7 +60,7 @@ export default function VerticalInvitation({
       </h1>
 
       <p className="text-center text-white text-lg font-mongol max-w-md leading-loose">
-        {name ? (
+        {name !== "" ? (
           <>
             {`Эрхэм хүндэт ${name} таныг гэр бүлийн `}
             <br />
@@ -95,7 +95,7 @@ export default function VerticalInvitation({
         {/* <span className="text-yellow-300 font-semibold">Содонгоо -н</span> */}
         Хэзээ:
         <br />
-        {`2025.06.29 ${time ? time : "13:00"} цагт`}
+        {`2025.06.29 ${time !== "" ? time : "13:00"} цагт`}
       </p>
       <audio ref={audioRef} loop autoPlay>
         <source src="/audio/duu.mp3" type="audio/mpeg" />
