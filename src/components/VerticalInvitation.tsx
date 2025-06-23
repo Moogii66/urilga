@@ -87,6 +87,7 @@ export default function VerticalInvitation({
             className="object-cover w-full h-full"
             width={400}
             height={400}
+            priority={true}
           />
         </div>
       </div>

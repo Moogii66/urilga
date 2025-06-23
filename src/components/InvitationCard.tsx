@@ -20,7 +20,8 @@ export default function InvitationCard() {
           <strong>🕒 Цаг:</strong> 14:00
         </p>
         <p className="text-md mb-2">
-          <strong>📍 Байршил:</strong> "Happy Water Park", Хан-Уул дүүрэг
+          <strong>📍 Байршил:</strong>&quot;Happy Water Park&quot;, Хан-Уул
+          дүүрэг
         </p>
       </div>
       <p className="text-center text-pink-600 mt-6 font-medium">
