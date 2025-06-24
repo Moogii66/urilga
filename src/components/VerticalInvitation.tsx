@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 export default function VerticalInvitation({
   name,
@@ -11,15 +11,23 @@ export default function VerticalInvitation({
 }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (audio) {
-      audio.volume = 0.4; // Хүч багатай тоглуулах
-      audio.play().catch((err) => {
-        console.log("Автоматаар тоглуулах боломжгүй:", err);
+  // useEffect(() => {
+  //   const audio = audioRef.current;
+  //   if (audio) {
+  //     audio.volume = 0.4; // Хүч багатай тоглуулах
+  //     audio.play().catch((err) => {
+  //       console.log("Автоматаар тоглуулах боломжгүй:", err);
+  //     });
+  //   }
+  // }, []);
+
+  const handlePlay = () => {
+    if (audioRef.current) {
+      audioRef.current.play().catch((err) => {
+        console.log("Тоглуулахад алдаа гарлаа:", err);
       });
     }
-  }, []);
+  };
 
   return (
     <div
@@ -97,8 +105,15 @@ export default function VerticalInvitation({
         <br />
         {`2025.06.29 ${time !== "" ? time : "13:00"} цагт`}
       </p>
+      <button
+        className="mt-6 text-white bg-yellow-500 px-4 py-2 rounded"
+        onClick={handlePlay}
+      >
+        Дууг тоглуулах
+      </button>
       <audio ref={audioRef} loop autoPlay>
         <source src="/audio/duu.mp3" type="audio/mpeg" />
+
         {/* Таны хөтөч энэ аудио-г дэмжихгүй байна. */}
       </audio>
     </div>
