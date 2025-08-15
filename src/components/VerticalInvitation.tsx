@@ -66,7 +66,7 @@ export default function VerticalInvitation() {
         </h1>
 
         <p className="text-center text-white text-lg font-mongol max-w-md leading-loose">
-          Хайрт найз та бүгдийг
+          Хайрт найзууд та бүгдийг
           <br />
           {/* <span className="text-[#FF0080] extrabold text-2xl"> */}
           <span className=" extrabold text-2xl">Д.Одгэрэл -н</span>
