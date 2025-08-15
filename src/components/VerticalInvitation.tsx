@@ -74,6 +74,14 @@ export default function VerticalInvitation() {
           <br /> ирэхийг урьж байна.
           {/* <br /> хэмээн урьж байна. */}
         </p>
+        <div className="flex gap-4">
+          <p className="text-center text-[#FF0080] text-lg font-mongol max-w-md leading-loose">
+            Dress code:
+          </p>
+          <p className="text-center text-white text-lg font-mongol max-w-md leading-loose">
+            Хар цагаан
+          </p>
+        </div>
 
         {/* Хүүхдийн зураг */}
         <div className="mt-8 mb-6 relative">
