@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Lobster } from "next/font/google";
+import { Geist, Geist_Mono, Tektur } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,9 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const lobster = Lobster({
+// const lobster = Lobster({
+//   subsets: ["latin"],
+//   weight: "400",
+//   // variable: "--font-lobster", // Энэ фонтууд variable үүсгэх боломжгүй
+// });
+
+const tektur = Tektur({
   subsets: ["latin"],
-  weight: "400",
+  weight: "800",
   // variable: "--font-lobster", // Энэ фонтууд variable үүсгэх боломжгүй
 });
 
@@ -32,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{ fontFamily: lobster.style.fontFamily }}
+        style={{ fontFamily: tektur.style.fontFamily }}
       >
         {children}
       </body>

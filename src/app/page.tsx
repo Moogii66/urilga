@@ -1,18 +1,20 @@
 "use client";
 
 import VerticalInvitation from "@/components/VerticalInvitation";
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
 function PageContent() {
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
 
-  const name = searchParams.get("name") || "";
-  const time = searchParams.get("time") || "";
+  // const name = searchParams.get("name") || "";
+  // const time = searchParams.get("time") || "";
 
   return (
     <main className="min-h-screen">
-      <VerticalInvitation name={name} time={time} />
+      <VerticalInvitation
+      // name={name} time={time}
+      />
     </main>
   );
 }
