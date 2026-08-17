@@ -53,7 +53,7 @@ export default function VerticalInvitation() {
     return () => clearInterval(interval); // Component устахад цэвэрлэх
   }, []);
 
-  const MAP_URL = "https://maps.app.goo.gl/g4YS97jwGHNd7wxr8";
+  const MAP_URL = "https://maps.app.goo.gl/2ReSRSmQsiQesQrG9";
 
   return (
     <div
@@ -70,18 +70,18 @@ export default function VerticalInvitation() {
           <br />
           {/* <span className="text-[#FF0080] extrabold text-2xl"> */}
           <span className=" extrabold text-2xl">Д.Одгэрэл -н</span>
-          <br /> төрсөн өдрийн баярт хүрэлцэн
+          <br /> төрсөн өдрийн уулзалтанд хүрэлцэн
           <br /> ирэхийг урьж байна.
           {/* <br /> хэмээн урьж байна. */}
         </p>
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           <p className="text-center text-[#FF0080] text-lg font-mongol max-w-md leading-loose">
             Dress code:
           </p>
           <p className="text-center text-white text-lg font-mongol max-w-md leading-loose">
             Хар цагаан
           </p>
-        </div>
+        </div> */}
 
         {/* Хүүхдийн зураг */}
         <div className="mt-8 mb-6 relative">
@@ -100,7 +100,7 @@ export default function VerticalInvitation() {
           {/* <span className="text-yellow-300 font-semibold">Содонгоо -н</span> */}
           Хэзээ:
           <br />
-          {`2025.08.16 19:00 цагт`}
+          {`2026.08.19 18:30 цагт`}
         </p>
         <div className="flex gap-5">
           <button
